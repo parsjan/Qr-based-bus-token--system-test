@@ -1,0 +1,26 @@
+/*const handleScan = async(data) => {
+    console.log("scanning");
+    if (data) {
+      const qrdata = JSON.parse(data);
+      if(qrdata.id && qrdata.passanger && qrdata.expirytime && qrdata.start && qrdata.end && qrdata.pickup && qrdata.fair){
+        const response= await axios.post("http://localhost:3002/qrscan",{data})
+        if( response.data.allok===true){
+             setQRData(qrdata)
+             setqrerror(false)
+             navigate("/userconformation",{state:qrData})
+        }
+        else{
+          setqrerror(true)
+        }
+      }
+      else{
+          setqrerror(true)
+      }
+      setQRData(data);
+    }
+  };
+
+  const handleError = (err) => {
+    console.error('Error scanning QR code:', err);
+  };
+  */
